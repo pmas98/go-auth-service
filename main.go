@@ -11,7 +11,7 @@ import (
 
 func main() {
 	r := routes.SetupRouter()
-	consumerGroup, err := utils.InitKafkaConsumerGroup("1")
+	consumerGroup, err := utils.InitKafkaConsumerGroup("auth-service-consumer-group")
 	if err != nil {
 		log.Fatalf("Failed to initialize Kafka consumer group: %v", err)
 	}
